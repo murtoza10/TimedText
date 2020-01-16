@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="1dp"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants" >
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+	
+    <TextView
+        android:id="@+id/textViewRecv"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="To"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+		
+		<TextView
+	    android:id="@+id/textViewRecvValue"
+	    android:layout_width="80dp"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/textViewRecv"
+	    android:layout_marginTop="10dp"
+	    android:text="To"
+	    android:maxLines="1"
+	    android:ellipsize="marquee"
+	    android:textAppearance="?android:attr/textAppearanceSmall" />
+    <TextView
+        android:id="@+id/textViewMsg"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/textViewRecv"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:layout_alignParentTop="true"
+        android:text="Msg"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+		
+		<TextView
+	    android:id="@+id/textViewMsgValue"
+	    android:layout_width="100dp"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@+id/textViewRecvValue"
+	    android:layout_below="@+id/textViewMsg"
+	    android:layout_marginTop="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:maxLines="3"
+	    android:text="Msg"
+	    android:ellipsize="marquee"
+	    android:textAppearance="?android:attr/textAppearanceSmall" />
+    <TextView
+        android:id="@+id/textViewHr"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/textViewMsg"
+        android:layout_alignParentTop="true"
+        android:text="Hour"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+		
+		<TextView
+	    android:id="@+id/textViewHrValue"
+	    android:layout_width="50dp"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@+id/textViewMsgValue"
+	    android:layout_below="@+id/textViewHr"
+	    android:layout_marginTop="10dp"
+	    android:text="Hr"
+	    android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+    <TextView
+        android:id="@+id/textViewMins"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textViewHr"
+        
+        android:text="Mins"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+	
+    <TextView
+	    android:id="@+id/textViewMinsValue"
+	    android:layout_width="50dp"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/textViewMins"
+	    
+	    android:layout_toRightOf="@+id/textViewHrValue"
+	    android:layout_marginTop="10dp"
+	    android:text="Mins"
+	    android:textAppearance="?android:attr/textAppearanceSmall" />
+    <TextView
+        android:id="@+id/textViewSecs"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        
+        android:layout_toRightOf="@+id/textViewMins"
+        android:text="Seconds"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+	
+    <TextView
+	    android:id="@+id/textViewSecsValue"
+	    android:layout_width="50dp"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/textViewSecs"
+	    
+	    android:layout_toRightOf="@+id/textViewMinsValue"
+	    android:text="Secs"
+	    android:layout_marginTop="10dp"
+	    android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+    <TextView
+        android:id="@+id/textViewDay"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textViewSecs"
+        
+        android:text="Day"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+	
+    <TextView
+	    android:id="@+id/textViewDayValue"
+	    android:layout_width="50dp"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/textViewDay"
+	    
+	    android:layout_toRightOf="@+id/textViewSecsValue"
+	    android:text="Day"
+	    android:layout_marginTop="10dp"
+	    android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+    
+    <TextView
+        android:id="@+id/textViewMonth"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        
+        android:layout_toRightOf="@+id/textViewDay"
+        android:text="Month"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+	
+    <TextView
+	    android:id="@+id/textViewMonthValue"
+	    android:layout_width="50dp"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/textViewMonth"
+	    
+	    android:layout_toRightOf="@+id/textViewDayValue"
+	    android:text="Month"
+	    android:layout_marginTop="10dp"
+	    android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+    
+    <TextView
+        android:id="@+id/textViewYear"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        
+        android:layout_toRightOf="@+id/textViewMonth"
+        android:text="Year"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+	    android:id="@+id/textViewYearValue"
+	    android:layout_width="50dp"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/textViewYear"
+	    android:layout_toRightOf="@+id/textViewMonthValue"
+	    android:text="Year"
+	    android:layout_marginTop="10dp"
+	    android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+     
+ </RelativeLayout>
+ 
+</LinearLayout>

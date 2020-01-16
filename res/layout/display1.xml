@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+            
+    
+   <ListView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:focusable="true"
+	   android:focusableInTouchMode="true"
+	   android:paddingTop="30dp"
+	   android:paddingBottom="50dp"
+       android:id="@+id/lv1"
+       android:descendantFocusability="beforeDescendants"/>
+	
+	<EditText android:id="@+id/inputSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search contacts.."
+        android:background="@android:color/white"
+        android:focusable="true"
+        android:ems="10"
+        />
+     <Button
+         android:id="@+id/button1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="20dp"
+         android:layout_alignParentBottom="true"
+         android:layout_centerHorizontal="true"
+         android:text="Select" />
+
+</RelativeLayout>
+</LinearLayout>

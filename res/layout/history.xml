@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="1dp"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants" >
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+	<TextView
+        android:id="@+id/textViewRecv1"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="To"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+		
+		<TextView
+	    android:id="@+id/textViewRecvValue1"
+	    android:layout_width="80dp"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/textViewRecv1"
+	    android:layout_marginTop="15dp"
+	    android:text="To"
+	    android:ellipsize="marquee"
+	    android:textAppearance="?android:attr/textAppearanceSmall" />
+    <TextView
+        android:id="@+id/textViewMsg1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/textViewRecv1"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:text="Msg"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+		
+		<TextView
+	    android:id="@+id/textViewMsgValue1"
+	    android:layout_width="100dp"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@+id/textViewRecvValue1"
+	    android:layout_below="@+id/textViewMsg"
+	    android:layout_marginTop="15dp"
+	    android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:maxLines="3"
+	    android:text="Msg"
+	    android:ellipsize="marquee"
+	    android:textAppearance="?android:attr/textAppearanceSmall" />
+    <TextView
+        android:id="@+id/textViewHr1"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Hour"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+		
+		<TextView
+	    android:id="@+id/textViewHrValue1"
+	    android:layout_width="50dp"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/textViewHr1"
+	    android:layout_marginTop="15dp"
+	    android:text="Hr"
+	    android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+    <TextView
+        android:id="@+id/textViewMins1"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textViewHr1"
+        
+        android:text="Mins"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+	
+    <TextView
+	    android:id="@+id/textViewMinsValue1"
+	    android:layout_width="50dp"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/textViewMins1"
+	    
+	    android:layout_toRightOf="@+id/textViewHrValue1"
+	    android:layout_marginTop="15dp"
+	    android:text="Mins"
+	    android:textAppearance="?android:attr/textAppearanceSmall" />
+    <TextView
+        android:id="@+id/textViewSecs1"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        
+        android:layout_toRightOf="@+id/textViewMins1"
+        android:text="Seconds"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+	
+    <TextView
+	    android:id="@+id/textViewSecsValue1"
+	    android:layout_width="50dp"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/textViewSecs1"
+	    
+	    android:layout_toRightOf="@+id/textViewMinsValue1"
+	    android:text="Secs"
+	    android:layout_marginTop="15dp"
+	    android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+    <TextView
+        android:id="@+id/textViewDay1"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textViewSecs1"
+        
+        android:text="Day"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+	
+    <TextView
+	    android:id="@+id/textViewDayValue1"
+	    android:layout_width="50dp"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/textViewDay1"
+	    
+	    android:layout_toRightOf="@+id/textViewSecsValue1"
+	    android:text="Day"
+	    android:layout_marginTop="15dp"
+	    android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+    
+    <TextView
+        android:id="@+id/textViewMonth1"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        
+        android:layout_toRightOf="@+id/textViewDay1"
+        android:text="Month"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+	
+    <TextView
+	    android:id="@+id/textViewMonthValue1"
+	    android:layout_width="50dp"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/textViewMonth1"
+	    
+	    android:layout_toRightOf="@+id/textViewDayValue1"
+	    android:text="Month"
+	    android:layout_marginTop="15dp"
+	    android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+    
+    <TextView
+        android:id="@+id/textViewYear1"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        
+        android:layout_toRightOf="@+id/textViewMonth1"
+        android:text="Year"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+	    android:id="@+id/textViewYearValue1"
+	    android:layout_width="50dp"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/textViewYear1"
+	    android:layout_toRightOf="@+id/textViewMonthValue1"
+	    android:text="Year"
+	    android:layout_marginTop="15dp"
+	    android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+     
+ </RelativeLayout>
+
+</LinearLayout>
